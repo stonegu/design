@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Company
+--
+-id: varchar(36) // uuid
+-realmid: varchar(36)
+-displayname: varchar(255)
+-registname: varchar(255) // nullable
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>210</y>
+      <w>240</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+-id: long // auto
+-typecode: varchar(10),
+-street: VARCHAR(255)
+-city: VARCHAR(100)
+-province: VARCHAR(50)
+-postalcode: VARCHAR(20)
+-country: VARCHAR(20)
+-latitude: FLOAT( 10, 6 )
+-longitude: FLOAT( 10, 6 )
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>30</y>
+      <w>240</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Typecode
+--
+-id: long // auto
+-type: varchar(20) //company
+-code: varchar(10) // co
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>110</y>
+      <w>50</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>
