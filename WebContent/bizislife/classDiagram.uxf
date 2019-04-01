@@ -9,11 +9,11 @@
       <w>240</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>Company
+    <panel_attributes>bizislife:Company
 --
 -id: varchar(36) // uuid
 -realmid: varchar(36)
--displayname: varchar(255)
+-prefername: varchar(255)
 -registname: varchar(255) // nullable
 
 </panel_attributes>
@@ -27,7 +27,7 @@
       <w>240</w>
       <h>180</h>
     </coordinates>
-    <panel_attributes>Address
+    <panel_attributes>bizislife:Address
 --
 -id: long // auto
 -typecode: varchar(10),
@@ -44,8 +44,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>330</x>
-      <y>30</y>
+      <x>40</x>
+      <y>450</y>
       <w>240</w>
       <h>80</h>
     </coordinates>
@@ -71,5 +71,32 @@ m1=1
 m2=1..n
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>50</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>keycloak:user
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>250</x>
+      <y>50</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
   </element>
 </diagram>
